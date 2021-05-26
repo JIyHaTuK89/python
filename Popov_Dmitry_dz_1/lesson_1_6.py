@@ -4,12 +4,12 @@
 # Программа должна принимать значения параметров a и b и выводить одно натуральное число — номер дня.
 
 percentage_growth = 0.1 # переменная я коэффициентом роста
-initial_result = int(input("Введите начальный результат: "))
-final_result = int(input("Введите финальный результат: "))
+initial_result = float(input("Введите начальный результат: "))
+final_result = float(input("Введите финальный результат: "))
 
 day = 1
 i = initial_result
-while i <= final_result:
+while i < final_result:
     day += 1
     i += i * percentage_growth
     print(f"День {day}: {i:.2f}")
